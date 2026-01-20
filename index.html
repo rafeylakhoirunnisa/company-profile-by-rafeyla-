@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Company Profile</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f4f4;
+    color: #000000;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #000000;
+    color: #fff;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+nav a {
+    color: #aeadad;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: #851f1f;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 180px;
+    height: 120%;
+    object-fit: cover;
+}
+
+
+.hero h2 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* ===== SECTION ===== */
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: left;
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+/* ===== SERVICES ===== */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: #931b1b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 6px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>PT Indonesian Noodles</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <img src="maps_indonesia-removebg-preview (2).png" alt="Logo">
+    <h2> AUTHENTIC INDONESIAN INSTANT NOODLES </h2>
+    <p>We produce authentic Indonesian instant noodles inspired by Nusantara flavors.</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h3>ABOUT US </h3>
+    <div class="about">
+        <p>
+           We are an Indonesian food company dedicated to creating high-quality instant noodles inspired by the rich flavors of Nusantara. 
+           By combining authentic recipes, carefully selected ingredients, and modern production standards, we deliver products that represent the true taste of Indonesia. 
+           <p>
+           Our commitment goes beyond flavor. We prioritize food safety, quality consistency, and continuous innovation to ensure every serving meets international standards. 
+           Through our products, we aim to introduce Indonesian culinary heritage to a wider audience, both locally and globally.
+           </p>
+           <p>
+            We believe great food connects cultures. That’s why we continuously innovate to bring the essence of Nusantara cuisine to modern lifestyles, 
+            making Indonesian flavors accessible anytime, anywhere.
+           </p>
+        </p>
+        <img src="maps_indonesia-removebg-preview (2).png">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <h3>OUR SERVICE </h3>
+    <div class="services">
+        <div class="service">
+            <h4>MANUFACTURING</h4>
+            <p>We operate modern and hygienic production facilities to ensure high-quality instant noodles that meet national and international food safety standards.</p>
+        </div>
+        <div class="service">
+            <h4>PRODUCT DEVELOPMENT</h4>
+            <p>We continuously develop new flavors inspired by Indonesian cuisine, combining traditional recipes with innovative food technology.</p>
+        </div>
+        <div class="service">
+            <h4>QUALITY ASSURANCE</h4>
+            <p>Every product undergoes strict quality control processes to guarantee consistency, safety, and superior taste.</p>
+        </div>
+        <div class="service">
+            <h4>DISTRIBUTION</h4>
+            <p>With an extensive distribution network, we deliver our products efficiently to markets across Indonesia and international destinations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+    <h3>OUR PRODUCT</h3>
+    <div class="gallery">
+        <img src="mie sumatra.jpeg">
+        <img src="mie jawa.jpeg">
+        <img src="mie kalimantan.jpeg">
+        <img src="mie sulawesi.jpeg">
+        <img src="mie bali .jpeg">
+        <img src="pop mie .jpeg">
+        <img src="premium collection .jpeg">
+        <img src="sepesial edition .jpeg">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <h3>CONTACT US</h3>
+    <p>📍 Jakarta, Indonesia</p>
+    <p>📞 0812-3456-7890</p>
+    <p>✉️ info@indonesiannoodles.co.id</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 PT Indonesian Noodles. All Rights Reserved.
+</footer>
+
+</body>
+</html>
